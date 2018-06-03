@@ -10,7 +10,8 @@ int area(int length, int width){
 
 int main(){
 	int a;
-	int b; 
+	int b;
+	cout << "Hello user" << endl;
 	cout << "Give me the width of the rectangle" << endl;
 	cin >> a;
 	cout << "Give me the length of the rectangle" << endl;
