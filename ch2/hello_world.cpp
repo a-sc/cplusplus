@@ -1,9 +1,16 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
+string return_my_name(){
+  string s = "Javier";
+  return s;
+}
+
 int main()
 {
-	cout << "Hello, World!\n";
-	return 0;
+  cout << "Hello, World!\n";
+  cout << "My name is " << return_my_name() << endl;
+  return 0;
 }
