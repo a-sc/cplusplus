@@ -3,9 +3,13 @@ Basics of computer architecture
  Operating systems and processes
 Basic UNIX commands
  ls
- cd
+ cd Change Directory (with no arguments goes to your home directory)
  cp
  mv
+ pwd
+ rm
+ man <command>
+ mkdir
 Basics of git
  git clone
  git status
