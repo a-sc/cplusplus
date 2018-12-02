@@ -1,0 +1,14 @@
+Basics of computer architecture
+ Block diagram of a motherboard
+ Operating systems and processes
+Basics of git
+ git clone
+ git add
+ git commit
+ git help <command>
+ git push origin master
+Basics of C++
+ Linking and compilation
+ Standard output ostream
+ Functions (in particular main())
+ Namespaces
