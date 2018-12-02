@@ -1,6 +1,11 @@
 Basics of computer architecture
  Block diagram of a motherboard
  Operating systems and processes
+Basin UNIX commands
+ ls
+ cd
+ cp
+ mv
 Basics of git
  git clone
  git add
