@@ -2,8 +2,10 @@ Basics of computer architecture
  Block diagram of a motherboard
  Operating systems and processes
 Basic UNIX commands
+ tab for autocompletion 
  ls
- cd Change Directory (with no arguments goes to your home directory)
+ cd Change Directory (with no arguments goes to your home directory,
+ .. for going one directory layer up)
  cp
  mv
  pwd
