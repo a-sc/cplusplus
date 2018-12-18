@@ -1,2 +1,5 @@
 # emacs temporary files
 *~
+
+# executables
+*.exe

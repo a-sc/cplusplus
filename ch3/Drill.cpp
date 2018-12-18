@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  
+
   string first_name, friend_name, friend_sex, destination;
   int age;
 
