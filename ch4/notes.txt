@@ -1,0 +1,7 @@
+if
+while
+constexpr
+git add .
+.gitignore
+g++ -std=c++11 -o something.exe something.cpp
+break statement inside switch
