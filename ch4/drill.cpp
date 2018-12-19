@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-  int val1;
-  int val2;
+  double val1;
+  double val2;
   char c;
-  int smaller;
-  int larger;
+  double smaller;
+  double larger;
 
   while (true) {
     cout << "Enter two whole numbers, or | if you want to stop the program: ";
@@ -31,6 +31,8 @@ int main() {
     if (smaller != larger) {
       cout << "The smaller number is " << smaller << " and the larger one is " <<
        larger << endl;
+      if (larger - smaller <= 0.01)
+        cout << "The numbers are almost equal" << endl;
     }
     else {
       cout << "The numbers are equal" << endl;
