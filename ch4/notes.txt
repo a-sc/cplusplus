@@ -8,3 +8,4 @@ break statement inside switch
 git remote add <remote-branch-name> <remote-branch-url>
 git log
 git merge <other-branch> (do while in your master)
+git fetch <remote>
