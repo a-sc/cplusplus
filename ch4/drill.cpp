@@ -32,7 +32,7 @@ int main() {
       cout << "The smaller number is " << smaller << " and the larger one is " <<
        larger << endl;
       if (larger - smaller <= 0.01)
-        cout << "The numbers are almost equal" << endl;
+          cout << "The numbers are almost equal" << endl;
     }
     else {
       cout << "The numbers are equal" << endl;
