@@ -1,0 +1,2 @@
+g++ -c generates a binary without linking
+g++ -o compiles, assembles and links
