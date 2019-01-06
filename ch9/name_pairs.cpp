@@ -4,14 +4,14 @@
 
 using namespace std;
 
-void change_int(double a, double b){
+void change_int(double& a, double& b){
     double temp;
     temp = a;
     a = b;
     b = temp;
 }
 
-void change_string(string x, string y){
+void change_string(string& x, string& y){
   string temp;
   temp = x;
   x = y;
