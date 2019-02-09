@@ -8,8 +8,11 @@ Rational::Rational(int num, int den) {
   denominator = den;
 }
 
-void Rational::print() {
-  cout << "I am a rational number: " << numerator << "/" << denominator << endl;
+string Rational::print() {
+  string a;
+  a = to_string(numerator) + '/' + to_string(denominator);
+  return a;
+  //cout << "I am a rational number: " << numerator << "/" << denominator << endl;
 }
 
 int Rational::num() const {
@@ -35,6 +38,13 @@ Rational operator*(const Rational& a, const Rational& b){
   return result;
 }
 
+Rational operator/(const Rational& a, const Rational& b){
+  Rational result {1, 1};
+  result.setNum(a.num()*b.den());
+  result.setDen(a.den()*b.num());
+  return result;
+}
+
 void Rational::simplify(){
   int smallest;
 
@@ -42,13 +52,19 @@ void Rational::simplify(){
     smallest = numerator;
   else
     smallest = denominator;
-
-  for (int i = 1; i < smallest; i++) {
+  if (smallest == 1) return;
+  for (int i = 2; i <= smallest; i++) {
     if (numerator%i == 0 && denominator%i == 0){
       numerator = numerator / i;
       denominator = denominator / i;
+      simplify();
+      return;
     }
   }
+}
+
+ostream& operator<<(ostream& os, const Rational& b){
+  return os << b.num() << "/" << b.den();
 }
 
 //

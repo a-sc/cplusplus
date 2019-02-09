@@ -4,7 +4,7 @@
 class Rational {
 public:
   Rational(int num, int den);
-  void print();
+  std::string print();
   int num() const;
   int den() const;
   void setNum(int num);
@@ -23,3 +23,5 @@ int denominator;
 };
 
 Rational operator*(const Rational& a, const Rational& b);
+Rational operator/(const Rational& a, const Rational& b);
+std::ostream& operator<<(std::ostream& os, const Rational& b);
